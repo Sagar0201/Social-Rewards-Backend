@@ -2,5 +2,8 @@ services:
   - type: web
     name: social-rewards-backend
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py migrate
+      python create_admin.py
     startCommand: gunicorn social_rewards.wsgi:application
