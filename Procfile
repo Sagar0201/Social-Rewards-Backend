@@ -1,1 +1,1 @@
-web: gunicorn social_rewards.asgi:application -k uvicorn.workers.UvicornWorker
+web: gunicorn social_rewards.wsgi:application
