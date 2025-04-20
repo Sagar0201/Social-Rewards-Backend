@@ -64,8 +64,16 @@ WSGI_APPLICATION = "social_rewards.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 DATABASES = {
-    "default": dj_database_url.config(default='postgresql://user:password@host:port/dbname', conn_max_age=600)
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bhakti_pravah',  # Your Render DB name
+        'USER': 'bhakti_pravah',  # Your Render DB username
+        'PASSWORD': 'Ton8tZVCEyfzveHTrA7ybSraqZL278Ws',  # Your Render DB password
+        'HOST': 'dpg-cub9ct1opnds73eho9q0-a.oregon-postgres.render.com',  # Your Render DB host
+        'PORT': '5432',  # PostgreSQL default port
+    }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -96,7 +104,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']  # for dev
+STATICFILES_DIRS = [BASE_DIR / 'static']# for dev
 STATIC_ROOT = BASE_DIR / 'staticfiles'    # for collectstatic (prod)
 
 # WhiteNoise configuration for serving static files
