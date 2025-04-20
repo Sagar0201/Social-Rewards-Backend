@@ -1,0 +1,58 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+db.sqlite3
+
+# Media and static files
+media/
+staticfiles/
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Environment variables file
+.env
+
+# Pytest and coverage files
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.hypothesis/
+
+# Django migrations
+**/migrations/*
+
+# Docker related files
+docker-compose.yml
+Dockerfile
+*.dockerfile
+
+# GitHub Actions
+.github/
+
+# VS Code settings
+.vscode/
+
+# Render
+render.yaml
