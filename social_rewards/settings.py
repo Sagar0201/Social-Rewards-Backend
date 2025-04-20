@@ -66,12 +66,8 @@ WSGI_APPLICATION = "social_rewards.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Social Rewards',  # Your Render DB name
-        'USER': 'social_rewards_user',  # Your Render DB username
-        'PASSWORD': 'nHQgp7XVta4LXMgQyY9dsxin54mFuAZA',  # Your Render DB password
-        'HOST': 'dpg-d02eddeuk2gs73ed3nbg-a.oregon-postgres.render.com',  # Your Render DB host
-        'PORT': '5432',  # PostgreSQL default port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
